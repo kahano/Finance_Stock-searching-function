@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kahano\\Desktop\\FinShark\\api\\api.csproj": {}
+    "C:\\Users\\Kahano\\Desktop\\Finance_StockTracking\\api\\api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kahano\\Desktop\\FinShark\\api\\api.csproj": {
+    "C:\\Users\\Kahano\\Desktop\\Finance_StockTracking\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kahano\\Desktop\\FinShark\\api\\api.csproj",
+        "projectUniqueName": "C:\\Users\\Kahano\\Desktop\\Finance_StockTracking\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "C:\\Users\\Kahano\\Desktop\\FinShark\\api\\api.csproj",
+        "projectPath": "C:\\Users\\Kahano\\Desktop\\Finance_StockTracking\\api\\api.csproj",
         "packagesPath": "C:\\Users\\Kahano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kahano\\Desktop\\FinShark\\api\\obj\\",
+        "outputPath": "C:\\Users\\Kahano\\Desktop\\Finance_StockTracking\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kahano\\AppData\\Roaming\\NuGet\\NuGet.Config",
