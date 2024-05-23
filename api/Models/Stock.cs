@@ -27,8 +27,8 @@ namespace api.Models
 
         public long Marketkap { get; set;}
 
-        [JsonIgnore]
-         [IgnoreDataMember]
+        // [JsonIgnore]
+        //  [IgnoreDataMember]
         public List<Comment> Comments { get; set;} = new List<Comment>();
 
         [JsonIgnore]

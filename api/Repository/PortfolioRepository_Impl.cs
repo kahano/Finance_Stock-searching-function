@@ -56,7 +56,8 @@ namespace api.Repository
                         Purchase = stock.Stock.Purchase,
                         LastDiv =  stock.Stock.LastDiv,
                         Industry = stock.Stock.Industry, 
-                        Marketkap = stock.Stock.Marketkap
+                        Marketkap = stock.Stock.Marketkap,
+                        Comments = stock.Stock.Comments.Select(x =>  new Comment {Title = x.Title, Content = x.Content} ).ToList()
 
                     
 
