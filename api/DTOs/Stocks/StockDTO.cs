@@ -7,37 +7,37 @@ using api.Models;
 
 namespace api.DTOs.Stocks
 {
-    public class StockDTO{
-          public int Id { get; set; }
+    
 
+    public record StockDTO(
+        
+           int Id,  
+    
           [Required]
           [MaxLength(10,ErrorMessage = "Symbol cannot be over 10 characters")]
-        public  string Symbol { get; set; } = string.Empty;
+          string? Symbol,
 
-       
-        [Required]
-        [MaxLength(10,ErrorMessage = "Symbol cannot be over 10 characters")]
-        public string CompanyName { get; set; } = string.Empty;
+          [Required]
+         [MaxLength(10,ErrorMessage = "Symbol cannot be over 10 characters")]
+          string? CompanyName, 
 
-        [Required]
-        [Range(1,1000000000)]
-        public decimal Purchase { get; set; }
+           [Required]
+         [Range(1,1000000000)]
+          decimal Purchase, 
 
-        [Required]
-        [Range(0.001,100)]
-        public decimal LastDiv { get; set; }
+          [Required]
+         [Range(0.001,100)]
+         decimal LastDiv,
 
-        [Required]
-        [MaxLength(10,ErrorMessage = "Symbol cannot be over 10 characters")]
-        public string? Industry { get; set; } 
+         [Required]
+         [MaxLength(10,ErrorMessage = "Symbol cannot be over 10 characters")]
+            string? Industry ,
 
         [Range(1,5000000000)]
-        public long Marketkap { get; set; }
-        
-   
-        public List<CommentDTO> Comments { get; set; }
+        long Marketkap,
 
-
-    };
+        List<CommentDTO> Comments
+          
+        );
    
 }

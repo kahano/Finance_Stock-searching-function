@@ -12,21 +12,21 @@ namespace api.EntityMappers
     {
         public static StockDTO ToStockDTO(this Stock stockModel){
             
-            return new StockDTO() {
+            return new StockDTO(
 
-                 Id = stockModel.Id,
-                 Symbol = stockModel.Symbol,
-               CompanyName = stockModel.CompanyName,
-                Purchase = stockModel.Purchase,
-                LastDiv = stockModel.LastDiv,
-               Industry = stockModel.Industry,
-                Marketkap = stockModel.Marketkap,
-                Comments = stockModel.Comments.Select(x => x.ToCommentDTO()).ToList()
+                 stockModel.Id,
+                  stockModel.Symbol,
+               stockModel.CompanyName,
+                stockModel.Purchase,
+                stockModel.LastDiv,
+               stockModel.Industry,
+               stockModel.Marketkap,
+                stockModel.Comments.Select(x => x.ToCommentDTO()).ToList()
 
                 
             
 
-            };
+            );
         }
 
         public static Stock ToStock(this CreateStockRequestDTO stockModel){
