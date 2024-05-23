@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
+using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace api.Models
@@ -25,10 +27,13 @@ namespace api.Models
 
         public long Marketkap { get; set;}
 
+        [JsonIgnore]
+         [IgnoreDataMember]
+        public List<Comment> Comments { get; set;} = new List<Comment>();
 
-        public List<Comment> Comments { get; set;}
-
-        public List<Portfolio> Portfolios { get; set;} 
+        [JsonIgnore]
+         [IgnoreDataMember]
+        public List<Portfolio> Portfolios { get; set;} = new List<Portfolio>();
 
 
 

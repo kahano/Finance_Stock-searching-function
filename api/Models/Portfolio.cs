@@ -4,11 +4,12 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using api.DTOs;
 
 namespace api.Models
 {
     [Table("Portfolios")]
-    public class Portfolio
+    public class Portfolio // It's relationsheep between AppUser & Stocks
     {
         public  string AppUserId { get; set; }
 
@@ -18,6 +19,9 @@ namespace api.Models
         public  AppUser AppUser { get; set; }
 
         public Stock Stock { get; set; }
+
+    
+      
 
        
     }

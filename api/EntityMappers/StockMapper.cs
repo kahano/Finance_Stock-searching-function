@@ -21,7 +21,9 @@ namespace api.EntityMappers
                 stockModel.LastDiv,
                stockModel.Industry,
                stockModel.Marketkap,
-                stockModel.Comments.Select(x => x.ToCommentDTO()).ToList()
+               stockModel.Comments.Select(x => x.ToCommentDTO()).ToList()
+               
+              
 
                 
             
@@ -40,6 +42,7 @@ namespace api.EntityMappers
                 LastDiv = stockModel.LastDiv,
                 Industry = stockModel.Industry,
                 Marketkap = stockModel.Marketkap,
+             
                 
             };
         

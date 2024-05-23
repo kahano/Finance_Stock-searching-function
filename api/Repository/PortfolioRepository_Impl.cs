@@ -58,7 +58,7 @@ namespace api.Repository
                         Industry = stock.Stock.Industry, 
                         Marketkap = stock.Stock.Marketkap
 
-
+                    
 
                     }).ToListAsync();
         }

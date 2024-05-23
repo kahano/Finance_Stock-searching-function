@@ -9,9 +9,11 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using api.Service;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
+
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddControllers();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Models;
 
 namespace api.DTOs
 {
@@ -30,6 +31,8 @@ namespace api.DTOs
 
         [Range(1,5000000000)]
         public long Marketkap { get; set; }
+
+      
         
     };
 }
