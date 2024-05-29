@@ -1,4 +1,4 @@
-Stock Tracking Web API (Finance)
+Searching funnction for finance data Web API (Finance)
 
 Use Swagger to test the endpoints and documenting the API
 
