@@ -47,6 +47,8 @@ namespace api.Controllers
 
                     if(result.Succeeded){
                         var role = await _userManager.AddToRoleAsync(user,"User");
+                        //sign In
+                        await _signInManager.SignInAsync(user,isPersistent: false);
 
                         if(role.Succeeded){
 
