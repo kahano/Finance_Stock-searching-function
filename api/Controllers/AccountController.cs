@@ -43,9 +43,9 @@ namespace api.Controllers
                         Email = registerdto.Email
                     };
 
-                    var appuser = await _userManager.CreateAsync(user,registerdto.Password);
+                    IdentityResult result = await _userManager.CreateAsync(user,registerdto.Password);
 
-                    if(appuser.Succeeded){
+                    if(result.Succeeded){
                         var role = await _userManager.AddToRoleAsync(user,"User");
 
                         if(role.Succeeded){
@@ -66,7 +66,7 @@ namespace api.Controllers
                     }
                     else{
 
-                        return StatusCode(500,appuser.Errors);
+                        return StatusCode(500,result.Errors);
                     }
 
                 }catch(Exception e){

@@ -38,7 +38,7 @@ namespace api.Repository
               return comment;
         }
 
-        public async Task<List<Comment>> GetAllComments(CommentQueryObject query) // todo
+        public async Task<List<Comment>> GetAllComments(CommentQueryObject query) 
         {
             var comments =  _context.Comments.Include(s => s.appUser).AsQueryable();
 
