@@ -66,7 +66,10 @@ namespace api.Controllers
                     }
                     else{
 
-                        return StatusCode(500,result.Errors);
+                        foreach(IdentityError error in result.Errors){
+                            ModelState.AddModelError("register",error.Description);
+                        }
+                        return StatusCode(500,ModelState);
                     }
 
                 }catch(Exception e){
