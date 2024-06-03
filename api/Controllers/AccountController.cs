@@ -17,6 +17,8 @@ namespace api.Controllers
     {
         private readonly UserManager<AppUser> _userManager ;
 
+   
+
         private readonly ITokenService _tokenService;
 
         private readonly SignInManager<AppUser> _signInManager;
@@ -55,6 +57,7 @@ namespace api.Controllers
                                 return Ok(new NewUserDTO(){
                                     UserName = user.UserName,
                                     Email = user.Email,
+                                
                                     Token = _tokenService.CreateToken(user)
                                 }
 

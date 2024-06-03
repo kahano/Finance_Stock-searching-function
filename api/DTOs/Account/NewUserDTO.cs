@@ -12,6 +12,8 @@ namespace api.DTOs.Account
       
         public string? Email { get; set;}
 
+        // // // public string role { get; set; }
+
         public string Token { get; set; }
     }
 }
